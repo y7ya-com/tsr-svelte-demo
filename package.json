@@ -1,0 +1,19 @@
+{
+  "name": "tsr-svelte-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.0-experimental",
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@tanstack/router-plugin": "github:y7ya-com/router-plugin#v0.0.0-experimental",
+    "vite": "^8.0.0"
+  }
+}
