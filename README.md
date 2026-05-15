@@ -3,7 +3,7 @@
 Live demo of [@tanstack/svelte-router](https://github.com/y7ya-com/svelte-router)
 — a community port of TanStack Router for Svelte 5.
 
-**Open in StackBlitz:** https://stackblitz.com/github/y7ya-com/tsr-svelte-demo
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/y7ya-com/tsr-svelte-demo?quickstart=1)
 
 ## What this shows
 
