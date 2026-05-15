@@ -1,0 +1,20 @@
+{
+  "name": "TanStack Svelte Router Demo",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm install -g pnpm && pnpm install",
+  "postAttachCommand": {
+    "dev": "pnpm dev --host"
+  },
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite dev server",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["svelte.svelte-vscode"]
+    }
+  }
+}
