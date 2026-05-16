@@ -14,12 +14,16 @@ import {
   lazyRouteComponent,
 } from '@tanstack/svelte-router'
 
+import {
+  Route as PostsPostIdRouteImport,
+  default as PostsPostIdRouteComponent,
+} from './routes/posts.$postId.svelte'
+
 const rootRouteImport = createRootRoute()
 const PostsRouteImport = createFileRoute('/posts')()
 const AboutRouteImport = createFileRoute('/about')()
 const IndexRouteImport = createFileRoute('/')()
 const PostsIndexRouteImport = createFileRoute('/posts/')()
-const PostsPostIdRouteImport = createFileRoute('/posts/$postId')()
 const PostsPostIdIndexRouteImport = createFileRoute('/posts/$postId/')()
 const PostsPostIdCommentsRouteImport = createFileRoute(
   '/posts/$postId/comments',
@@ -70,10 +74,7 @@ const PostsPostIdRoute = PostsPostIdRouteImport.update({
   path: '/$postId',
   getParentRoute: () => PostsRoute,
 } as any).update({
-  component: lazyRouteComponent(
-    () => import('./routes/posts.$postId.svelte'),
-    'default',
-  ),
+  component: PostsPostIdRouteComponent,
 })
 const PostsPostIdIndexRoute = PostsPostIdIndexRouteImport.update({
   id: '/',
