@@ -8,13 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.1-experimental",
+    "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.2-experimental",
     "svelte": "^5.0.0"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
-    "@tanstack/router-plugin": "github:y7ya-com/router-plugin#v0.0.1-experimental",
-    "@tanstack/router-generator": "github:y7ya-com/router-generator#v0.0.1-experimental",
+    "@tanstack/router-plugin": "github:y7ya-com/router-plugin#v0.0.2-experimental",
+    "@tanstack/router-generator": "github:y7ya-com/router-generator#v0.0.2-experimental",
     "vite": "^8.0.0"
   }
 }
