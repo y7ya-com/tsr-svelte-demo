@@ -5,9 +5,9 @@ thrown `notFound()`, and an error boundary — the Svelte port of
 `examples/react/start-basic`.
 
 ```bash
-pnpm dev     # http://localhost:3000
-pnpm build   # dist/client + dist/server
-pnpm start   # serve the build
+npm run dev   # http://localhost:3000
+npm run build # dist/client + dist/server
+npm start     # serve the build
 ```
 
 Route files are `.svelte` SFCs. Route options live in a `<script module>`

@@ -1,5 +1,5 @@
 // Production server: serves the client build statically and hands every other
-// request to the Start server entry. `pnpm build` first, then `pnpm start`.
+// request to the Start server entry. `npm run build` first, then `npm start`.
 import path from 'node:path'
 import express from 'express'
 import { toNodeHandler } from 'srvx/node'
