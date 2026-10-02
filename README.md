@@ -1,11 +1,14 @@
 # tsr-svelte-demo
 
-Live demo of `@tanstack/svelte-router`, the Svelte 5 adapter for TanStack
-Router (source: [`y7ya-com/router#feat/svelte`](https://github.com/y7ya-com/router/tree/feat/svelte)).
+Live demos of the Svelte 5 adapter for TanStack Router and TanStack Start
+(source: [`y7ya-com/router#feat/svelte`](https://github.com/y7ya-com/router/tree/feat/svelte)).
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/y7ya-com/tsr-svelte-demo?quickstart=1)
+| Demo | Open |
+| --- | --- |
+| **Router** (this folder): client-side, file-based routing | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/y7ya-com/tsr-svelte-demo?quickstart=1) |
+| **Start** ([`start/`](./start)): SSR, server functions in loaders, `head`, `notFound()`, error boundary | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/y7ya-com/tsr-svelte-demo?quickstart=1&devcontainer_path=.devcontainer%2Fstart%2Fdevcontainer.json) |
 
-## What this shows
+## Router demo: what it shows
 
 - File-based routing with mixed flat + folder conventions
 - Nested layouts via `<Outlet />`
@@ -37,10 +40,13 @@ the **folder** convention. Both work in the same tree.
 
 ```bash
 npm install
-npm run dev
+npm run dev          # router demo, http://localhost:5173
+
+cd start
+npm install
+npm run dev          # Start demo, http://localhost:3000
 ```
 
-Opens on `http://localhost:5173`.
 
 ## Source
 
