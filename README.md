@@ -1,7 +1,7 @@
 # tsr-svelte-demo
 
-Live demo of [@tanstack/svelte-router](https://github.com/y7ya-com/svelte-router)
-— a community port of TanStack Router for Svelte 5.
+Live demo of `@tanstack/svelte-router`, the Svelte 5 adapter for TanStack
+Router (source: [`y7ya-com/router#feat/svelte`](https://github.com/y7ya-com/router/tree/feat/svelte)).
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/y7ya-com/tsr-svelte-demo?quickstart=1)
 
@@ -36,23 +36,15 @@ the **folder** convention. Both work in the same tree.
 ## Run locally
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 Opens on `http://localhost:5173`.
 
 ## Source
 
-The actual adapter source lives in the
-[`y7ya-com/router`](https://github.com/y7ya-com/router/tree/feat/svelte-router/packages/svelte-router)
-fork. This demo repo just consumes the github-installable distribution.
-
-This is an **experimental community port** — not an official TanStack
-release. If/when an official `@tanstack/svelte-router` ships, swap the
-`package.json` ref:
-
-```diff
-- "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.0-experimental"
-+ "@tanstack/svelte-router": "^1.0.0"
-```
+The adapter source is on the
+[`feat/svelte`](https://github.com/y7ya-com/router/tree/feat/svelte/packages/svelte-router)
+branch of the `y7ya-com/router` fork. This demo installs prebuilt copies of the
+packages from GitHub until they are published to npm.
